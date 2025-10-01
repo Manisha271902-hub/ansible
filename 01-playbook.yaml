@@ -1,0 +1,6 @@
+- name : ping the server  
+  host : catalogue
+  #list of tasks/collections/objects
+  tasks:
+  - name : ping #can be anything 
+    ansible.builtin.ping: #ee module ki avasram le arguments
