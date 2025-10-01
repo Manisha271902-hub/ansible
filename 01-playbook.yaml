@@ -1,5 +1,5 @@
 - name : ping the server  
-  host : catalogue
+  hosts : catalogue
   #list of tasks/collections/objects
   tasks:
   - name : ping #can be anything 
