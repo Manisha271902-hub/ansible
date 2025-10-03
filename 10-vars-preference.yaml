@@ -3,11 +3,11 @@
   connection: local
   vars:
   - NAME : manisha from play 
-  vars_prompt:
+  # vars_prompt:
 
-    - name: NAME
-      prompt: What is your name?
-      private: false
+  #   - name: NAME
+  #     prompt: What is your name?
+  #     private: false
   # vars_files:
   # - course.yaml
   tasks:
