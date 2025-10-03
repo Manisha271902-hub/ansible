@@ -1,0 +1,14 @@
+- name : loop concepts
+  hosts: local
+  connection : local
+  tasks:
+  - name : install packages
+    ansible.builtin.package:
+      name: "{{item}} "
+      state: latest
+
+    loop:
+      - nginx
+      - mysql
+      
+    
