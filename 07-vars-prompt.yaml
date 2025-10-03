@@ -8,7 +8,8 @@
       private: false
 
     - name: password
-      prompt: What is your password?
+      prompt: What is your password? 
+      #ikada private: true kuda ivochu, ivvakapoyna idhi true teskuntadi ....
   tasks:
   - name : printing the variables we got from prompt
     ansible.builtin.debug:
