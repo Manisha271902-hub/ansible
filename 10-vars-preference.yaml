@@ -6,7 +6,7 @@
   vars_prompt:
 
     - name: NAME
-      prompt: What is your username?
+      prompt: What is your name?
       private: false
   vars_files:
   - course.yaml
@@ -15,4 +15,4 @@
     vars:
     - NAME : manisha from task 
     ansible.builtin.debug:
-      msg : "Hey the name is  {{NAME}}"
+      msg : "Name : {{NAME}}"
