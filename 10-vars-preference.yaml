@@ -12,7 +12,7 @@
   - course.yaml
   tasks:
   - name : vars pfrom task lvel
-    vars:
-    - NAME : manisha from task 
+    # vars:
+    # - NAME : manisha from task 
     ansible.builtin.debug:
       msg : "Name : {{NAME}}"
