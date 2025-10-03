@@ -1,10 +1,10 @@
 - name : Conditons
   hosts: local
   connection: local
+  vars:
+      x : 12
   tasks: 
   - name : test numb less than 10
-    vars:
-      x : 12
     ansible.builtin.debug:
       msg : "yes {{x}} is less than 10"
     when: x < 10
