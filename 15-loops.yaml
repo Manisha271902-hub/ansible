@@ -1,0 +1,13 @@
+- name : loop concepts
+  hosts: local
+  connection : local
+  tasks:
+  - name : using loop print names
+    ansible.builtin.debug:
+      msg: "The names ate below {{item}} "
+
+    loop:
+      - manisha
+      - poojitha
+      - cherry
+    
