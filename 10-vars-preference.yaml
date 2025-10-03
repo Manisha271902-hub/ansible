@@ -3,19 +3,16 @@
   connection: local
   vars:
   - NAME : manisha from play 
-  tasks:
-  - name : vars preference
-  vars:
-  - NAME : manisha from task 
   vars_prompt:
 
-    - name: name
+    - name: NAME
       prompt: What is your username?
       private: false
   vars_files:
   - course.yaml
-
   tasks:
-  - name : printing the variables from task level
+  - name : vars pfrom task lvel
+    vars:
+    - NAME : manisha from task 
     ansible.builtin.debug:
       msg : "Hey the name is  {{NAME}}"
