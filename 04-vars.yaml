@@ -1,5 +1,6 @@
 - name : play level variables
   hosts: local
+  connection: local
   vars:
   - COURSE : DevOps
   - Trainer: Sivakumar
