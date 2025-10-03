@@ -1,8 +1,8 @@
 - name : variables with prompt
   hosts: local
   connection: local
-  vars:
-  - NAME : manisha from play 
+  # vars:
+  # - NAME : manisha from play 
   # vars_prompt:
 
   #   - name: NAME
