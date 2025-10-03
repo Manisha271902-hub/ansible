@@ -7,5 +7,5 @@
   - name : print the course info
     vars:
     - COURSE : AWS
-      ansible.builtin.debug:
-        msg: "Hey the course is {{COURSE}} and the trainer is {{Trainer}}"
+    ansible.builtin.debug:
+      msg: "Hey the course is {{COURSE}} and the trainer is {{Trainer}}"
