@@ -5,5 +5,5 @@
   - Trainer: Sivakumar
   tasks:
   - name : print the course info
-  - ansible.builtin.debug:
+    ansible.builtin.debug:
       msg: "Hey the course is {{COURSE}} and the trainer is {{Trainer}}"
