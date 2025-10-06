@@ -103,7 +103,7 @@
     #ansible.builtin.command: cat /etc/passwd | grep root
     ansible.builtin.shell: cat /etc/passwd | grep root
     register: command_output
-    debug:
+    ansible.builtin.debug:
       msg: "command_output is {{ command_output}}"
 
   - name: print the command_output
