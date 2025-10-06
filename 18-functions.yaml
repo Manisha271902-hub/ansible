@@ -1,6 +1,8 @@
 - name : using filters
   hosts: local
   connection: local
+  vars:
+  - fruits
   tasks:
   - name : convert to upper case
     debug:
