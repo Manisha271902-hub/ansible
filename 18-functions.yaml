@@ -6,4 +6,6 @@
   tasks:
   - name : convert to upper case
     debug:
-      msg: "{{ fruits | upper() }}"
+      # msg: "{{ fruits | upper() }}"
+      msg : "{{ name is  name | default('manu') }}"
+      
