@@ -7,5 +7,5 @@
   - name : convert to upper case
     debug:
       # msg: "{{ fruits | upper() }}"
-      msg : "{{ name | default('manu') }}"
+      msg : " Hello , the name is {{ name | default('manu') }}"
       
