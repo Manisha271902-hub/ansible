@@ -7,5 +7,8 @@
   - name : convert to upper case
     debug:
       # msg: "{{ fruits | upper() }}"
-      msg : " Hello , the name is {{ name | default('manu') }}"
-      
+      msg : " Hello , the name is {{ name | default('manu') }}" #em ivvakunte default ga idi teskuntadi
+    
+  - name : string to list
+    debug:
+      msg: "{{ fruits | split(',') }}"
