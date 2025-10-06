@@ -3,5 +3,5 @@
   connection: local
   tasks:
   - name : convert to upper case
-  - debug:
+    debug:
       msg: "{{ fruits | upper() }}"
