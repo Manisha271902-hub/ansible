@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-  - fruits
+  - fruits : mango
   tasks:
   - name : convert to upper case
     debug:
