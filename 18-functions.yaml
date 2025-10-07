@@ -100,7 +100,7 @@
       msg: "{{ ipaddress | ansible.utils.ipv4 }}"
 
   - name: Grep for root
-    ansible.builtin.command: cat /etc/passwd | grep root # p
+    ansible.builtin.shell: cat /etc/passwd | grep root # p
     register: command_output
 
   - name: Show the grep output
