@@ -99,13 +99,13 @@
     ansible.builtin.debug: 
       msg: "{{ ipaddress | ansible.utils.ipv4 }}"
 
-  # - name: Grep for root
-  #   ansible.builtin.shell: cat /etc/passwd | grep root
-  #   register: command_output
+  - name: Grep for root
+    ansible.builtin.shell: cat /etc/passwd | grep root # p
+    register: command_output
 
-  # - name: Show the grep output
-  #   ansible.builtin.debug:
-  #     msg: "command_output is {{ command_output}}"
+  - name: Show the grep output
+    ansible.builtin.debug:
+      msg: "command_output is {{ command_output}}"
 
   # - name: print the command_output
   #   ansible.builtin.debug:
